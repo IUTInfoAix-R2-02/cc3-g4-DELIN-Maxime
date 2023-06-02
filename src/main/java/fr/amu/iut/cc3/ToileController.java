@@ -36,6 +36,23 @@ public class ToileController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
 
+    @FXML
+    TextField comp1;
+    @FXML
+    TextField comp2;
+    @FXML
+    TextField comp3;
+    @FXML
+    TextField comp4;
+    @FXML
+    TextField comp5;
+    @FXML
+    TextField comp6;
+    @FXML
+    Button tracer;
+    @FXML
+    Button vider;
+
     int getXRadarChart(double value, int axe ){
         return (int) (rayonCercleExterieur + Math.cos(Math.toRadians(angleDepart - (axe-1)  * angleEnDegre)) * rayonCercleExterieur
                 *  (value / noteMaximale));
@@ -46,4 +63,16 @@ public class ToileController implements Initializable {
                 *  (value / noteMaximale));
     }
 
+    public void placePoint() {
+
+
+
+        tracer.setOnAction(actionEvent -> {int c1 = Integer.valueOf(comp1.getText());
+                                           int c2 = Integer.valueOf(comp2.getText());
+                                           int c3 = Integer.valueOf(comp3.getText());
+                                           int c4 = Integer.valueOf(comp4.getText());
+                                           int c5 = Integer.valueOf(comp5.getText());
+                                           int c6 = Integer.valueOf(comp6.getText());
+        });
+    }
 }

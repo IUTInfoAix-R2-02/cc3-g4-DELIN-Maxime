@@ -8,8 +8,10 @@
 <?import javafx.scene.text.Text?>
 
 
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
 <HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
-    <Pane prefHeight="400.0" prefWidth="400.0" >
+    <Pane prefHeight="420.0" prefWidth="650.0" style="-fx-background-color: #ADD8E6;">
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile"/>
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile"/>
         <Circle centerX="200.0" centerY="200.0" radius="100.0" styleClass="toile"/>
@@ -21,12 +23,33 @@
         <Line startX="200.0" startY="0" endX="200" endY="400.0" styleClass="toile"/>
         <Line endX="200.0" endY="400.0" rotate="60.0" startX="200.0" styleClass="toile"/>
         <Line endX="200.0" endY="400.0" rotate="120.0" startX="200.0" styleClass="toile"/>
-        <Text x="170" y="0" text="Compétence 1" />
+        <Text x="170" y="10" text="Compétence 1" />
         <Text x="300" y="100" text="Compétence 2" />
         <Text x="300" y="300" text="Compétence 3" />
         <Text x="170" y="410" text="Compétence 4" />
         <Text x="26" y="300" text="Compétence 5" />
         <Text x="26" y="99" text="Compétence 6" />
         <Pane fx:id="toile" styleClass="toile"/>
+
+        <Text x="410" y="50" text="Compétence 1 - Réaliser"/>
+        <TextField fx:id="comp1" layoutX="600" layoutY="35" prefWidth="40"/>
+
+        <Text x="410" y="100" text="Compétence 2 - Optimiser"/>
+        <TextField fx:id="comp2" layoutX="600" layoutY="85" prefWidth="40"/>
+
+        <Text x="410" y="150" text="Compétence 3 - Administrer"/>
+        <TextField fx:id="comp3" layoutX="600" layoutY="135" prefWidth="40"/>
+
+        <Text x="410" y="200" text="Compétence 4 - Gérer"/>
+        <TextField fx:id="comp4" layoutX="600" layoutY="185" prefWidth="40"/>
+
+        <Text x="410" y="250" text="Compétence 5 - Conduire"/>
+        <TextField fx:id="comp5" layoutX="600" layoutY="235" prefWidth="40"/>
+
+        <Text x="410" y="300" text="Compétence 6 - Collaborer"/>
+        <TextField fx:id="comp6" layoutX="600" layoutY="285" prefWidth="40"/>
+
+        <Button fx:id="tracer" layoutX="450" layoutY="380" prefHeight="30" prefWidth="60" text="Tracer"/>
+        <Button fx:id="vider" layoutX="530" layoutY="380" prefHeight="30" prefWidth="60" text="Vider"/>
     </Pane>
 </HBox>
